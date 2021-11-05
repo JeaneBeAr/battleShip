@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./battle.css" type="text/css" />
+        <title>BattleShip Game</title>
+    </head>
+    <body >
+        <h1 class = "font">BattleShip</h1>
+        <h3>Selecciona la posición de tus naves</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div id="letras">
+                        <div class= "abc"></div>
+                        <div class= "abc">A</div>
+                        <div class= "abc">B</div>
+                        <div class= "abc">C</div>
+                        <div class= "abc">D</div>
+                        <div class= "abc">E</div>
+                        <div class= "abc">F</div>
+                        <div class= "abc">G</div>
+                        <div class= "abc">H</div>
+                        <div class= "abc">I</div>
+                        <div class= "abc">J</div>
+                    </div>
+                        <div id= "numeros">
+                        <div class = "num">1</div>
+                        <div class = "num">2</div>
+                        <div class = "num">3</div>
+                        <div class = "num">4</div>
+                        <div class = "num">5</div>
+                        <div class = "num">6</div>
+                        <div class = "num">7</div>
+                        <div class = "num">8</div>
+                        <div class = "num">9</div>
+                        <div class = "num">10</div>
+                    </div>
+                    <div id="board">
+                    </div>
+                </div>
+                <div class="col">
+                    <div id="boardAttack">
+                        <div id="letras">
+                            <div class= "abc"></div>
+                            <div class= "abc">A</div>
+                            <div class= "abc">B</div>
+                            <div class= "abc">C</div>
+                            <div class= "abc">D</div>
+                            <div class= "abc">E</div>
+                            <div class= "abc">F</div>
+                            <div class= "abc">G</div>
+                            <div class= "abc">H</div>
+                            <div class= "abc">I</div>
+                            <div class= "abc">J</div>
+                        </div>
+                            <div id= "numeros">
+                            <div class = "num">1</div>
+                            <div class = "num">2</div>
+                            <div class = "num">3</div>
+                            <div class = "num">4</div>
+                            <div class = "num">5</div>
+                            <div class = "num">6</div>
+                            <div class = "num">7</div>
+                            <div class = "num">8</div>
+                            <div class = "num">9</div>
+                            <div class = "num">10</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h4 id="titulo">Tus naves:</h4>
+            <div id="ships" class="row">
+                <div class="col"> 
+                    <div>
+                        <span id="titulo">Portaviones</span></br>
+                        <span id="titulo">Tamaño: 5</span>
+                    </div>
+                    <div class="position"></div>
+                </div>
+                <div class="col"> 
+                    <div>
+                        <span id="titulo">Acorazado</span></br>
+                        <span id="titulo">Tamaño: 4</span>
+                    </div>
+                    <div class="position"></div>
+                </div>
+                <div class="col"> 
+                    <div>
+                        <span id="titulo">Submarino</span></br>
+                        <span id="titulo">Tamaño: 3</span>
+                    </div>
+                    <div class="position"></div>
+                </div>
+                <div class="col"> 
+                    <div>
+                        <span id="titulo">Destructor</span></br>
+                        <span id="titulo">Tamaño: 2</span>
+                    </div>
+                    <div class="position"></div>
+                </div>           
+            </div>
+                <div class="row">
+                    <button id="button" onclick="startGame()" >START</button>
+                </div>
+            
+        </div> 
+        <script type="text/javascript" src="./battle.js"></script>
+    </body>
+</html>
